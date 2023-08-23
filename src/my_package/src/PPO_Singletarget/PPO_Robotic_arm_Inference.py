@@ -14,7 +14,6 @@ if __name__ == "__main__":
     
     # Integrated with Unity Simulator
     env = Ned2_control()
-    env.USE_CCL = False
     
     # episode 별 검증
     checkpoint = torch.load("20_models/PPO_Teacher0814_256*128*64/model_344_model.tar", map_location=lambda storage, loc: storage)

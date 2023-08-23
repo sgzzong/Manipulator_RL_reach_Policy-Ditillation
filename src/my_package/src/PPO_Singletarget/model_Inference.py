@@ -11,7 +11,7 @@ env.reset()
 
 # Student
 Student = Agent.Student_model(12,3)
-path = "20_models/PPO_Teacher0814_256*128*64/model_344_model.tar" # model 주소
+path = "models/simple_Preprocessing_PPO_Studnet_256*128*64->128*64*32_8.23_18.28.261000/model_230.tar" # model 주소
 checkpoint = torch.load(path, map_location=lambda storage, loc: storage)
 Student.policy_nn.load_state_dict(checkpoint['model'])
 

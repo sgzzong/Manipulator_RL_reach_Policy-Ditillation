@@ -20,7 +20,7 @@ env.reset()
 # Teacher
 
 Teacher = Agent.Agent(12, 3, batch_size=Config.BATCH_SIZE)
-path = "20_models/PPO_Teacher0814_256*128*64/model_344_model.tar"
+path = "models/PPO_Teacher0823_256*128*64/model_226_model_best.tar"
 checkpoint = torch.load(path, map_location=lambda storage, loc: storage)
 Teacher.agent_control.policy_nn.load_state_dict(checkpoint['model'])
 
