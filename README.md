@@ -1,4 +1,4 @@
-# Ned2_RL_reach_Policy-Ditillation
+# Manipulator_RL_reach_Policy-Ditillation
 Lightening the AI model to reach the target point of the robot arm with policy Distillation
 
 #### Notice
@@ -12,6 +12,12 @@ Lightening the AI model to reach the target point of the robot arm with policy D
 
 ## Demonstration
 Model size : Teacher model ( Hidden layer : 256 * 128 * 64 ) >> Distilled Student model ( Hidden layer : 128 * 64 * 32 )
+
 Training Time : 90 minutes >> 20 minutes
 
 ## Overview
+![image](https://github.com/sgzzong/Ned2_RL_reach_Policy-Ditillation/assets/86835751/15bff64d-5b06-407f-8641-da0caa9d2e78)
+
+## Installation
+'''bash
+git clone 
