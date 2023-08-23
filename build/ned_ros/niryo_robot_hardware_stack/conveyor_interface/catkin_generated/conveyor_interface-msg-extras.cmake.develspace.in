@@ -1,0 +1,2 @@
+set(conveyor_interface_MESSAGE_FILES "/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface/msg/ConveyorFeedback.msg;/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface/msg/ConveyorFeedbackArray.msg")
+set(conveyor_interface_SERVICE_FILES "/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface/srv/ControlConveyor.srv;/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface/srv/SetConveyor.srv")

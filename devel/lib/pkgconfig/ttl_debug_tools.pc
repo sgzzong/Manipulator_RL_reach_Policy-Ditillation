@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: ttl_debug_tools
+Description: Description of ttl_debug_tools
+Version: 4.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: dynamixel_sdk

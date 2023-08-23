@@ -1,0 +1,2 @@
+set(can_driver_MESSAGE_FILES "/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/can_driver/msg/StepperArrayMotorHardwareStatus.msg;/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/can_driver/msg/StepperMotorCommand.msg;/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/can_driver/msg/StepperMotorHardwareStatus.msg")
+set(can_driver_SERVICE_FILES "/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/can_driver/srv/StepperCmd.srv")

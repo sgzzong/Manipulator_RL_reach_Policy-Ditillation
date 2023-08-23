@@ -1,0 +1,11 @@
+(cl:defpackage ttl_driver-msg
+  (:use )
+  (:export
+   "<ARRAYMOTORHARDWARESTATUS>"
+   "ARRAYMOTORHARDWARESTATUS"
+   "<MOTORCOMMAND>"
+   "MOTORCOMMAND"
+   "<MOTORHARDWARESTATUS>"
+   "MOTORHARDWARESTATUS"
+  ))
+

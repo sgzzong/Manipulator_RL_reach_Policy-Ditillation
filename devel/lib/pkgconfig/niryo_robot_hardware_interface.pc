@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: niryo_robot_hardware_interface
+Description: Description of niryo_robot_hardware_interface
+Version: 4.1.0
+Cflags: -I/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/niryo_robot_hardware_interface/include
+Libs: -L${prefix}/lib -lniryo_robot_hardware_interface
+Requires: common conveyor_interface cpu_interface end_effector_interface joints_interface message_runtime niryo_robot_msgs roscpp tools_interface

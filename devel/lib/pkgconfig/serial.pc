@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: serial
+Description: Description of serial
+Version: 1.2.1
+Cflags: -I/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/serial/include
+Libs: -L${prefix}/lib -lserial
+Requires: 

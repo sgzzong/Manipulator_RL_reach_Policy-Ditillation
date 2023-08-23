@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/install
+
+Name: joints_interface
+Description: Description of joints_interface
+Version: 4.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ljoints_interface -ljoints_interface_core
+Requires: actionlib can_driver common controller_manager hardware_interface niryo_robot_msgs roscpp ttl_driver

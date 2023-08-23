@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ned2_moveit
+    relative_path: urdf/ned2/niryo_ned2_gazebo.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/niryo_ned2.srdf
+  CONFIG:
+    author_name: cv
+    author_email: xcvxc@naver.com
+    generated_timestamp: 1678063739

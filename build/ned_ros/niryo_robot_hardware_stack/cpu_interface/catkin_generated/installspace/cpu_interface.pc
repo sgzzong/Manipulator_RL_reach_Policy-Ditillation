@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/install
+
+Name: cpu_interface
+Description: Description of cpu_interface
+Version: 4.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcpu_interface
+Requires: common roscpp

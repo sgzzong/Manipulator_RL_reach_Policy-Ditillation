@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/install
+
+Name: niryo_robot_tools_commander
+Description: Description of niryo_robot_tools_commander
+Version: 4.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs geometry_msgs message_runtime niryo_robot_msgs std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: can_debug_tools
+Description: Description of can_debug_tools
+Version: 4.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: mcp_can_rpi

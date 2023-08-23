@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: tools_interface
+Description: Description of tools_interface
+Version: 4.1.0
+Cflags: -I/home/scps/catkin_ws/devel/include -I/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/tools_interface/include
+Libs: -L${prefix}/lib -ltools_interface
+Requires: common message_runtime roscpp std_msgs ttl_driver

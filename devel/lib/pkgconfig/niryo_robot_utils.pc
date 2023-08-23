@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: niryo_robot_utils
+Description: Description of niryo_robot_utils
+Version: 4.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,15 @@
+(cl:defpackage niryo_robot_led_ring-srv
+  (:use )
+  (:export
+   "LEDUSER"
+   "<LEDUSER-REQUEST>"
+   "LEDUSER-REQUEST"
+   "<LEDUSER-RESPONSE>"
+   "LEDUSER-RESPONSE"
+   "SETLEDCOLOR"
+   "<SETLEDCOLOR-REQUEST>"
+   "SETLEDCOLOR-REQUEST"
+   "<SETLEDCOLOR-RESPONSE>"
+   "SETLEDCOLOR-RESPONSE"
+  ))
+

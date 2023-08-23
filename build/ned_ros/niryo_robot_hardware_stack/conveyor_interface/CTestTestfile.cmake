@@ -1,0 +1,8 @@
+# CMake generated Testfile for 
+# Source directory: /home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface
+# Build directory: /home/scps/catkin_ws/build/ned_ros/niryo_robot_hardware_stack/conveyor_interface
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(_ctest_conveyor_interface_rostest_test_service_client_fake.test "/home/scps/catkin_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python3" "/opt/ros/noetic/share/catkin/cmake/test/run_tests.py" "/home/scps/catkin_ws/build/test_results/conveyor_interface/rostest-test_service_client_fake.xml" "--return-code" "/usr/bin/python3 /opt/ros/noetic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface --package=conveyor_interface --results-filename test_service_client_fake.xml --results-base-dir \"/home/scps/catkin_ws/build/test_results\" /home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface/test/service_client_fake.test ")
+set_tests_properties(_ctest_conveyor_interface_rostest_test_service_client_fake.test PROPERTIES  _BACKTRACE_TRIPLES "/opt/ros/noetic/share/catkin/cmake/test/tests.cmake;160;add_test;/opt/ros/noetic/share/rostest/cmake/rostest-extras.cmake;52;catkin_run_tests_target;/opt/ros/noetic/share/rostest/cmake/rostest-extras.cmake;80;add_rostest;/opt/ros/noetic/share/rostest/cmake/rostest-extras.cmake;100;_add_rostest_google_test;/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface/CMakeLists.txt;176;add_rostest_gtest;/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/conveyor_interface/CMakeLists.txt;0;")

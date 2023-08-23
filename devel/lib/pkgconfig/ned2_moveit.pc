@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: ned2_moveit
+Description: Description of ned2_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

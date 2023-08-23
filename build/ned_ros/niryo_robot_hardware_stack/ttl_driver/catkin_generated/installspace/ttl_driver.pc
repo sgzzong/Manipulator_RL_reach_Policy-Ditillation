@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/install
+
+Name: ttl_driver
+Description: Description of ttl_driver
+Version: 4.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lttl_driver
+Requires: common dynamixel_sdk message_runtime niryo_robot_msgs roscpp std_msgs

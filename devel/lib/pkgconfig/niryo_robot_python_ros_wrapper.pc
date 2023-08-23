@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: niryo_robot_python_ros_wrapper
+Description: Description of niryo_robot_python_ros_wrapper
+Version: 4.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs geometry_msgs niryo_robot_arm_commander niryo_robot_msgs niryo_robot_tools_commander

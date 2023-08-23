@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/install
+
+Name: end_effector_interface
+Description: Description of end_effector_interface
+Version: 4.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lend_effector_interface
+Requires: common message_runtime niryo_robot_msgs roscpp std_msgs ttl_driver

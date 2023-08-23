@@ -1,0 +1,2 @@
+set(niryo_robot_msgs_MESSAGE_FILES "msg/BusState.msg;msg/CommandStatus.msg;msg/HardwareStatus.msg;msg/MotorHeader.msg;msg/ObjectPose.msg;msg/RPY.msg;msg/RobotState.msg;msg/SoftwareVersion.msg")
+set(niryo_robot_msgs_SERVICE_FILES "srv/AdvertiseShutdown.srv;srv/GetBool.srv;srv/GetInt.srv;srv/GetNameDescriptionList.srv;srv/GetString.srv;srv/GetStringList.srv;srv/Ping.srv;srv/SetBool.srv;srv/SetFloat.srv;srv/SetInt.srv;srv/SetString.srv;srv/Trigger.srv")

@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/install
+
+Name: niryo_moveit_config_standalone
+Description: Description of niryo_moveit_config_standalone
+Version: 4.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

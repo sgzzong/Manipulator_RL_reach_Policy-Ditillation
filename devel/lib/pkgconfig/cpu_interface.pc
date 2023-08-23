@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: cpu_interface
+Description: Description of cpu_interface
+Version: 4.1.0
+Cflags: -I/home/scps/catkin_ws/src/ned_ros/niryo_robot_hardware_stack/cpu_interface/include
+Libs: -L${prefix}/lib -lcpu_interface
+Requires: common roscpp

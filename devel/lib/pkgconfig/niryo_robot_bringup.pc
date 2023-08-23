@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/devel
+
+Name: niryo_robot_bringup
+Description: Description of niryo_robot_bringup
+Version: 4.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+set(niryo_robot_poses_handlers_MESSAGE_FILES "msg/DynamicFrame.msg;msg/NiryoPose.msg;msg/Workspace.msg")
+set(niryo_robot_poses_handlers_SERVICE_FILES "srv/GetDynamicFrame.srv;srv/GetPose.srv;srv/GetTargetPose.srv;srv/GetTransformPose.srv;srv/GetWorkspaceMatrixPoses.srv;srv/GetWorkspacePoints.srv;srv/GetWorkspaceRatio.srv;srv/GetWorkspaceRobotPoses.srv;srv/ManageDynamicFrame.srv;srv/ManagePose.srv;srv/ManageWorkspace.srv")

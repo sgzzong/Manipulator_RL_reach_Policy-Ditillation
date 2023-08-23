@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/install
+
+Name: tools_interface
+Description: Description of tools_interface
+Version: 4.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ltools_interface
+Requires: common message_runtime roscpp std_msgs ttl_driver

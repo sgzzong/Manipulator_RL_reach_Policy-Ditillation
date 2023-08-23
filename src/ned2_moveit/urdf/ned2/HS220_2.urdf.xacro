@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="HS220">
+    <!-- Links -->
+
+    <link name="world"/>
+
+    <link name="base_link">
+        <inertial>
+            <origin xyz="-0.10064 4.2977E-06 0.12679" rpy="0 0 0"/>
+            <mass value="72.519"/>
+            <inertia
+		ixx="1.5867"
+		ixy="-0.0012389"
+		ixz="0.21442"
+		iyy="2.8116"
+		iyz="-0.0006098"
+		izz="3.9898" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/base_link.STL"/>
+            </geometry>
+            <material name="">
+		<color rgba="1 1 0.6 1" />
+      		</material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+		<mesh filename="package://ned2_moveit/HS220/meshes/base_link.STL" />
+	      </geometry>
+        </collision>
+    </link>
+
+    <link name="led_ring_link">
+        <!--
+        <visual>
+            <origin xyz="0 0 0"
+                    rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.0019" radius="0.0775"/>
+            </geometry>
+            <material
+                    name="">
+                <color
+                        rgba="1 1 1 0.25"/>
+            </material>
+        </visual> -->
+    </link>
+
+    <link name="shoulder_link">
+        <inertial>
+            <origin xyz="0.099185 0.040289 0.17611" rpy="0 0 0"/>
+            <mass value="48.386"/>
+            <inertia
+		ixx="1.2542"
+		ixy="-0.12807"
+		ixz="-0.49169"
+		iyy="1.7895"
+		iyz="-0.063625"
+		izz="1.6768" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_01.STL"/>
+            </geometry>
+            <material name="">
+		<color rgba="1 1 0.6 1" />
+      		</material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_01.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="arm_link">
+        <inertial>
+            <origin xyz="0.066298 -0.15035 0.48151" rpy="0 0 0"/>
+            <mass value="49.92"/>
+            <inertia
+		ixx="5.2272"
+		ixy="-0.0014584"
+		ixz="0.19792"
+		iyy="5.3896"
+		iyz="0.68752"
+		izz="0.72966" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_02.STL"/>
+            </geometry>
+            <material name="">
+		<color rgba="1 1 0.6 1" />
+	      </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_02.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="elbow_link">
+        <inertial>
+            <origin xyz="0.17402 0.16038 0.10935" rpy="0 0 0"/>
+            <mass value="57.421"/>
+            <inertia
+		ixx="0.59891"
+		ixy="-0.024944"
+		ixz="-0.060521"
+		iyy="1.4319"
+		iyz="-0.027347"
+		izz="1.1563" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_03.STL"/>
+            </geometry>
+            <material name="">
+		<color rgba="1 1 0.6 1" />
+	      </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_03.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="forearm_link">
+        <inertial>
+            <origin xyz="0.062307 -0.0026709 -3.5263E-08" rpy="0 0 0"/>
+            <mass value="5.2654"/>
+            <inertia
+		ixx="0.017275"
+		ixy="0.0015212"
+		ixz="6.3008E-09"
+		iyy="0.033969"
+		iyz="-1.5585E-09"
+		izz="0.033333" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_04.STL"/>
+            </geometry>
+            <material name="">
+		<color rgba="1 1 0.6 1" />
+	      </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_04.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- add collision for the motor of joint 5
+    <link name="joint5_motor">
+        <inertial>
+            <origin xyz="0 0 0.015" rpy="0 0 0"/>
+            <mass value="0.203543862275952"/>
+            <inertia ixx="0.0015" ixy="0.0" ixz="0.0" iyy="0.0015" iyz="0.0" izz="0.0015"/>
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0.015" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.047 0.0285 0.03"/>
+            </geometry>
+        </collision>
+    </link> -->
+
+
+    <link name="wrist_link">
+        <inertial>
+            <origin xyz="0.027034 0.015188 6.8589E-05" rpy="0 0 0"/>
+            <mass value="6.256"/>
+            <inertia
+		ixx="0.027335"
+		ixy="0.00047037"
+		ixz="-3.7423E-05"
+		iyy="0.037076"
+		iyz="5.4798E-06"
+		izz="0.035004" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0"
+                    rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_05.STL"/>
+            </geometry>
+            <material name="">
+		<color rgba="1 1 0.6 1" />
+	      </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"
+                    rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_05.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="hand_link">
+        <inertial>
+            <origin xyz="0.016758 5.2391E-06 -1.7361E-08" rpy="0 0 0"/>
+            <mass value="1.5928"/>
+            <inertia
+		ixx="0.0054416"
+		ixy="-3.7296E-07"
+		ixz="8.7708E-10"
+		iyy="0.0034471"
+		iyz="4.4172E-07"
+		izz="0.003445" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_06.STL"/>
+            </geometry>
+            <material name="">
+		<color rgba="1 1 0.6 1" />
+	      </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ned2_moveit/HS220/meshes/link_06.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="tool_link">
+    </link>
+
+
+    <!-- Joints -->
+
+    <joint name="joint_world" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="joint_1" type="revolute">
+        <origin xyz="0.0006505 7.3191E-05 0.253" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="shoulder_link"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.142" upper="3.142" effort="2844" velocity="2.094" />
+    </joint>
+
+    <joint name="joint_2" type="revolute">
+        <origin xyz="0.31135 -0.067073 0.355" rpy="0 0 0"/>
+        <parent link="shoulder_link"/>
+        <child link="arm_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-1.39626" upper="1.1342" effort="2844" velocity="1.833" />
+    </joint>
+
+    <joint name="joint_3" type="revolute">
+        <origin xyz="0.0086244 -0.142 1.1096" rpy="0 0 0"/>
+        <parent link="arm_link"/>
+        <child link="elbow_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit
+	      lower="-1.396"
+	      upper="3.316"
+	      effort="2844"
+	      velocity="2.007" />
+    </joint>
+
+    <joint name="joint_4" type="revolute">
+        <origin xyz="1.0041 0.18787 0.22038" rpy="0 0 0"/>
+        <parent link="elbow_link"/>
+        <child link="forearm_link"/>
+        <axis xyz="1 0 0"/>
+        <limit
+	      lower="-6.284"
+	      upper="6.284"
+	      effort="1422"
+	      velocity="2.531" />
+    </joint>
+
+    <joint name="joint_5" type="revolute">
+        <origin xyz="0.2335 -0.055 0" rpy="0 0 0"/>
+        <parent link="forearm_link"/>
+        <child link="wrist_link"/>
+        <axis xyz="0 1 0"/>
+        <limit
+	      lower="-2.234"
+	      upper="2.234"
+	      effort="1422"
+	      velocity="2.531" />
+    </joint>
+
+    <joint name="joint_6" type="revolute">
+        <origin xyz="0.157 0.055 0" rpy="0 0 0"/>
+        <parent link="wrist_link"/>
+        <child link="hand_link"/>
+        <axis xyz="1 0 0"/>
+        <limit
+	      lower="-6.284"
+	      upper="6.284"
+	      effort="770"
+	      velocity="3.84" />
+    </joint>
+
+    <joint name="hand_tool_joint" type="fixed">
+        <parent link="hand_link"/>
+        <child link="tool_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!--
+    <joint name="joint_test" type="fixed">
+        <origin xyz="-0.03 0 0.158" rpy="0 -${PI/2} 0"/>
+        <parent link="forearm_link"/>
+        <child link="joint5_motor"/>
+    </joint> -->
+
+    <joint name="joint_led_ring" type="fixed">
+        <parent link="world"/>
+        <child link="led_ring_link"/>
+        <origin xyz="0 0 0.0923" rpy="0 0 0"/>
+    </joint>
+
+</robot>

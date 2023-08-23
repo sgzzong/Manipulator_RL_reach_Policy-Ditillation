@@ -1,0 +1,8 @@
+prefix=/home/scps/catkin_ws/install
+
+Name: niryo_robot_msgs
+Description: Description of niryo_robot_msgs
+Version: 4.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_runtime std_msgs

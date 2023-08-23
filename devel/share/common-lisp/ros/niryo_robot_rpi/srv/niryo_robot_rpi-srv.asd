@@ -1,0 +1,28 @@
+
+(cl:in-package :asdf)
+
+(defsystem "niryo_robot_rpi-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :niryo_robot_rpi-msg
+)
+  :components ((:file "_package")
+    (:file "AdvertiseShutdown" :depends-on ("_package_AdvertiseShutdown"))
+    (:file "_package_AdvertiseShutdown" :depends-on ("_package"))
+    (:file "ChangeMotorConfig" :depends-on ("_package_ChangeMotorConfig"))
+    (:file "_package_ChangeMotorConfig" :depends-on ("_package"))
+    (:file "GetAnalogIO" :depends-on ("_package_GetAnalogIO"))
+    (:file "_package_GetAnalogIO" :depends-on ("_package"))
+    (:file "GetDigitalIO" :depends-on ("_package_GetDigitalIO"))
+    (:file "_package_GetDigitalIO" :depends-on ("_package"))
+    (:file "LedBlinker" :depends-on ("_package_LedBlinker"))
+    (:file "_package_LedBlinker" :depends-on ("_package"))
+    (:file "ScanI2CBus" :depends-on ("_package_ScanI2CBus"))
+    (:file "_package_ScanI2CBus" :depends-on ("_package"))
+    (:file "SetAnalogIO" :depends-on ("_package_SetAnalogIO"))
+    (:file "_package_SetAnalogIO" :depends-on ("_package"))
+    (:file "SetDigitalIO" :depends-on ("_package_SetDigitalIO"))
+    (:file "_package_SetDigitalIO" :depends-on ("_package"))
+    (:file "SetIOMode" :depends-on ("_package_SetIOMode"))
+    (:file "_package_SetIOMode" :depends-on ("_package"))
+    (:file "SetPullup" :depends-on ("_package_SetPullup"))
+    (:file "_package_SetPullup" :depends-on ("_package"))
+  ))
