@@ -21,7 +21,7 @@ Training Time : 90 minutes >> 20 minutes
 <div align="center">
   <img src="https://github.com/sgzzong/Ned2_RL_reach_Policy-Ditillation/assets/86835751/15bff64d-5b06-407f-8641-da0caa9d2e78">
 </div>
-
+![image](https://github.com/sgzzong/Manipulator_RL_reach_Policy-Ditillation/assets/86835751/afaac763-26f9-4d62-ab60-e063352deb9b)
 
 ## Installation
   ```bash
