@@ -6,8 +6,10 @@ Lightening the AI model to reach the target point of the robot arm with policy D
 
 #### Evironment
 >os : Ubuntu 20.04 LTS<br/>
+>python V : 3.8.10
 >algo : ppo<br/>
 >robot : ned2<br/>
+>env : GAZEBO<br/>
 >Task : Single target reach
 
 ## Demonstration
@@ -19,5 +21,38 @@ Training Time : 90 minutes >> 20 minutes
 ![image](https://github.com/sgzzong/Ned2_RL_reach_Policy-Ditillation/assets/86835751/15bff64d-5b06-407f-8641-da0caa9d2e78)
 
 ## Installation
-'''bash
-git clone 
+  ```bash
+  cd ~/catkin_ws/src
+  git clone https://github.com/sgzzong/Ned2_RL_reach_Policy-Ditillation.git
+  virtualenv venv
+  source venv/bin/active
+  install -r requirements.txt
+  cd ~/catkin_ws
+  catkin_make
+  source devel/setup.bash # update workspace
+  ```
+
+## Manipulator(ned2 6DOF) environment setting with GAZEBO
+```bash
+roslaunch ned2_moveit demo_gazebo.launch #defalut 10x speed
+#If you want to change the speed, modify the physical parameters in Gazebo
+```
+## Teacher model reinforcement learning
+Learning the teacher model to be used for policy distillation
+
+If you want to change the network size, modify the layer on NN.py and the Config.py file
+```bash
+python PPO_Robotic_arm_training.py # learning teacher model
+python PPO_Robotic_arm_Inference.py # Demonstration of the Learned Teacher Model
+```
+
+## Policy Distillation
+Student model learning using teacher model knowledge
+
+If you want to change the network size, modify the layer on NN.py and the Config.py file
+
+```bash
+#check the teacher model path
+python Policy_distillation.py # Distlling
+python model_Inference.py #  Demonstration of the Distilled Student Model
+```
