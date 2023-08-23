@@ -6,7 +6,7 @@ Lightening the AI model to reach the target point of the robot arm with policy D
 
 #### Evironment
 >os : Ubuntu 20.04 LTS<br/>
->python V : 3.8.10
+>python V : 3.8.10<br/>
 >algo : ppo<br/>
 >robot : ned2<br/>
 >env : GAZEBO<br/>
@@ -56,3 +56,5 @@ If you want to change the network size, modify the layer on NN.py and the Config
 python Policy_distillation.py # Distlling
 python model_Inference.py #  Demonstration of the Distilled Student Model
 ```
+## Experiment result
+![image](https://github.com/sgzzong/Manipulator_RL_reach_Policy-Ditillation/assets/86835751/ef7a1b23-c5e6-40bf-97b8-4978311be200)
