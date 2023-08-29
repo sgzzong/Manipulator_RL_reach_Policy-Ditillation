@@ -133,7 +133,7 @@ def Teacher_data_storage_simple_Processing(model):
             state = next_state
             score += total_reward
         
-        if success == 1: #데이터 전처리를 위해 성공했을 때의 경험만 추가해줌
+        if success == 1: #데이터 전처리를 위해 성공했을 때의 경험만 추가해줌.
             #end_time = time.time()
             #elapsed_time = end_time - start_time
             #if elapsed_time < 2:
@@ -258,6 +258,8 @@ def student_evaluation(model,ep_num):
             score += reward
         
         if done: 
+            print("mean : ", mean)
+            print("std :", std)
             if success == 1:
                 success_count += 1
             else:
