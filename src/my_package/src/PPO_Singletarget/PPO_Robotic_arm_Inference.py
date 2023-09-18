@@ -16,7 +16,7 @@ if __name__ == "__main__":
     env = Ned2_control()
     
     # episode 별 검증
-    checkpoint = torch.load("20_models/PPO_Teacher0814_256*128*64/model_344_model.tar", map_location=lambda storage, loc: storage)
+    checkpoint = torch.load("models/None_Preprocessing_PPO_Studnet_256*128*64->128*64*32_8.30_9.55.551000/model_220.tar", map_location=lambda storage, loc: storage)
     agent.agent_control.policy_nn.load_state_dict(checkpoint['model'])
 
     for episode in range(20):

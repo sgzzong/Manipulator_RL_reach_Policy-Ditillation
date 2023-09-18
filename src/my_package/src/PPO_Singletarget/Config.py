@@ -18,6 +18,7 @@ pd_sample_size = 100 #100
 STATE_SIZE = 12
 ACTION_SIZE = 3
 
+wpa_point = 1
 Clutch_factor = 0.98
 TIME_INTERVAL = 0.03
 hidden_size_1 = 256
@@ -45,4 +46,4 @@ anneal = 'decay' if ANNEAL_LR else ''
 env = 'env_scaled' if ENV_SCALE_CROP else ''
 now = datetime.datetime.now()
 date_time = "{}.{}_{}.{}.{}".format(now.month, now.day, now.hour, now.minute, now.second)
-WRITER_NAME = 'PPO_' +str(MODE)+ '_' + str(hidden_size_1) +'*'+ str(hidden_size_2) +'*'+ str(hidden_size_3) +'_' + date_time
+WRITER_NAME = '0.15_PPO_' +str(MODE)+ '_' + str(hidden_size_1) +'*'+ str(hidden_size_2) +'*'+ str(hidden_size_3) +'_' + date_time
