@@ -13,13 +13,13 @@ Lightening the AI model to reach the target point of the robot arm with policy D
 >Task : Single target reach
 
 ## installation(option)
-moveit install : sudo apt install ros-noetic-moveit
+  moveit install : sudo apt install ros-noetic-moveit
 
-joint controller install : sudo apt-get install ros-noetic-joint-trajectory-controller
+  joint controller install : sudo apt-get install ros-noetic-joint-trajectory-controller
 
-ros-bridge install : sudo apt-get install ros-noetic-rosbridge-server
+  ros-bridge install : sudo apt-get install ros-noetic-rosbridge-server
 
-trajectory install : sudo apt-get install ros-noetic-joint-trajectory-controller
+  trajectory install : sudo apt-get install ros-noetic-joint-trajectory-controller
 
 ## Demonstration
 Model size : Teacher model ( Hidden layer : 256 * 128 * 64 ) >> Distilled Student model ( Hidden layer : 128 * 64 * 32 )
