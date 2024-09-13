@@ -14,8 +14,11 @@ Lightening the AI model to reach the target point of the robot arm with policy D
 
 ## installation(option)
 moveit install : sudo apt install ros-noetic-moveit
+
 joint controller install : sudo apt-get install ros-noetic-joint-trajectory-controller
+
 ros-bridge install : sudo apt-get install ros-noetic-rosbridge-server
+
 trajectory install : sudo apt-get install ros-noetic-joint-trajectory-controller
 
 ## Demonstration
